@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> New Document </TITLE>
+
+  <script>
+    var imgs = ["cherry", "kiwi", "banana", "grape", "orange"];
+    var index = 0;
+    function changeImage(){
+      if(imgs.length -1 == index) index = -1;
+      document.getElementById("img1").src="./img/" + imgs[++index] + ".PNG";
+    }
+
+    function display(){
+     Application0.displayToast();
+    }
+
+  </script>
+ </HEAD>
+
+ <BODY>
+  <div style="height:30px;width:100%;background-color:yellow" onclick="display()">클릭</div>
+  <img src="./img/cherry.PNG" id='img1' width="30%" onclick=""><br>
+
+  <ul>
+  <li><a href="http://www.naver.com">naver.com</a>
+  <li><a href="http://www.daum.net">daum.net</a>
+  <li><a href="http://www.google.com">google.com</a>
+  </ul>
+ </BODY>
+</HTML>
